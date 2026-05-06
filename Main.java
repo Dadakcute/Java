@@ -1,16 +1,25 @@
 public class Main {
     public static void main(String[] args) {
 
-        Pessoa p1 = new Aluno();
-        Pessoa p2 = new Professor();
+        Aluno a1 = new Aluno("Ana", "1111-1111", "123", "A01");
+        Aluno a2 = new Aluno("Carlos", "2222-2222", "456", "A02");
 
-        p1.setNome("Carlos");
-        p2.setNome("Ana");
+        Professor prof = new Professor("Marcos", "3333-3333", "789", "P01", "Mestre");
 
-        System.out.println(p1.getNome());
-        p1.saudacao();
+        Funcionario func = new Funcionario("João", "4444-4444", "101", 1, "Secretário");
 
-        System.out.println(p2.getNome());
-        p2.saudacao();
+        Aluno[] lista = {a1, a2};
+        Responsavel resp = new Responsavel("Maria", "5555-5555", "202", lista);
+
+        a1.saudacao();
+        a1.aprende();
+
+        prof.saudacao();
+        prof.ensina();
+
+        func.saudacao();
+        func.desempenhaFuncao();
+
+        resp.saudacao();
     }
 }
