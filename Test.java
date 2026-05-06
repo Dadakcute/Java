@@ -1,4 +1,4 @@
-class pessoa {
+class Pessoa {
 
     public void saudacao(Pessoa pessoa) {
         return "Olá, pessoa!";
