@@ -1,4 +1,4 @@
-class Pessoa{
+class Pessoa {
     private String nome;
     private String fone;
     private String cpf;
